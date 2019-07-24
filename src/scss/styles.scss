@@ -1,0 +1,151 @@
+.container {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    .text-on-top {
+        color: white;
+        background: black;
+        font-size: .6rem;
+        padding: 0.5rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+            width: 2rem;
+        }
+    }
+
+    .center-images{
+        position: relative;
+        .background-image {
+            background-image: url('../assets/images/mobile_bgr.jpg');
+            background-size: cover;
+            width: 100%;
+            height: 83vh;
+        }
+            .orange-header {
+                position: absolute;
+                background-image: url('../assets/images/mobile-header.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 100%;
+                z-index: 1;
+                height: 12vh;
+            }
+            .logo-img {
+                background-image: url(../assets/images/Gratorama_logo.png);
+                background-size: cover;
+                position: absolute;
+                top: 5%;
+                left: 50%;
+                z-index: 2;
+                transform: translate(-50%, -50%);
+                height: 8vh;
+                width: 35vh;
+            }
+
+            .offer {
+                position: absolute;
+                top: 12vh;
+                width: 90%;
+                left: 5vw;
+            }
+
+            .cta-button {
+                top: 93%;
+                position: absolute;
+                left: 50%;
+                width: 60%;
+                transform: translate(-50%, -50%);
+            }
+        
+    }
+
+    .footer {
+        margin-bottom: 2rem;
+        p{
+            &.text {
+                margin: 0;
+                font-size: .7rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1600px){
+    .container {
+        .text-on-top {
+            position: absolute;
+            z-index: 2;
+            right: 5%;
+            background: none;
+            font-size: 0.6rem;
+            top: 4%;
+
+            img {
+                width: 1rem;
+            }
+        }
+        .center-images{
+            .background-image {
+                background-image: url('../assets/images/LP-Lucky-Cauldron_bgr_PC.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 83vh;
+                
+                .orange-header {
+                    background-image: url('../assets/images/header.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: 20%;
+                }
+
+                .logo-img {
+                    left: 25vw;
+                    z-index: 2;
+                    transform: translate(-50%, -50%);
+                }
+
+                .offer {
+                    position: absolute;
+                    top: 27%;
+                    width: 25%;
+                    left: 15%;
+                }
+
+                .cta-button {
+                    top: 72%;
+                    position: absolute;
+                    left: 27%;
+                    width: 35%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        .foother-payments {
+            margin-top: .5rem;
+        }
+
+        .footer {
+            p {
+                &.text {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    .container {
+        .center-images {
+            .background-image {
+                height: 70vh;
+            }
+        }
+    }
+}
